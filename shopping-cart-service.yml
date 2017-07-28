@@ -51,13 +51,14 @@ spring:
     url: jdbc:mysql://mysql:3306/dev
     username: root
     password: dbpass
-#security:
-#  oauth2:
-#    resource:
-#      userInfoUri: http://${DOCKER_IP:192.168.99.100}:8181/uaa/user
-#    client:
-#      client-id: acme
-#  enable-csrf: false
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://${DOCKER_IP:192.168.99.100}:8181/uaa/user
+    client:
+      client-id: acme
+  enable-csrf: false
+  ignored: /v1/**
 eureka:
   instance:
     prefer-ip-address: true
