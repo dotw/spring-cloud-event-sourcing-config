@@ -58,7 +58,7 @@ security:
     client:
       client-id: acme
   enable-csrf: false
-  ignored: /**
+  ignored: /v1/mycart
 eureka:
   instance:
     prefer-ip-address: true
