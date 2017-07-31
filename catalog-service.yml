@@ -27,6 +27,9 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 ---
+server:
+  port: 8282
+  contextPath: /catalog
 spring:
   profiles: docker
   redis:
