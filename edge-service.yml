@@ -44,7 +44,7 @@ security:
   oauth2:
     resource:
       userInfoUri: http://localhost:8181/uaa/user
-  ignored: /catalog/**
+  ignored: /catalog/**, /shoppingcart/v1/mycart
 ---
 spring:
   profiles: docker
