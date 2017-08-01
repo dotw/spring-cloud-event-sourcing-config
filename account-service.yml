@@ -39,6 +39,7 @@ security:
       userInfoUri: http://${DOCKER_IP:192.168.99.100}:8181/uaa/user
     client:
       client-id: acme
+  ignored: /v1/myaccounts
 eureka:
   instance:
     prefer-ip-address: true
