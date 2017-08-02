@@ -89,6 +89,7 @@ security:
       userAuthorizationUri: http://${DOCKER_IP:192.168.99.100}:8181/uaa/oauth/authorize
       clientId: acme
       clientSecret: acmesecret
+  ignored: /api/shoppingcart/v1/mycartevents, /api/shoppingcart/v1/mycart, /api/shoppingcart/v1/mycartcheckout, /api/account/v1/myaccounts, /api/order/v1/myorders/**
 eureka:
   instance:
     non-secure-port: 8787
