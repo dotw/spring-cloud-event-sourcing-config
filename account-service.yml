@@ -35,14 +35,14 @@ spring:
   sleuth:
     sampler:
       percentage: 1.0
-sample:
-  zipkin:
-    enabled: true
   datasource:
     url: jdbc:mysql://mysql:3306/dev
     username: root
     password: dbpass
     initialize: true
+sample:
+  zipkin:
+    enabled: true
 security:
   oauth2:
     resource:
