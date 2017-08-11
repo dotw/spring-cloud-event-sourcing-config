@@ -21,12 +21,12 @@ spring:
   sleuth:
     sampler:
       percentage: 1.0
-sample:
-  zipkin:
-    enabled: true
   neo4j:
     host: ${SPRING_NEO4J_HOST:neo4j}
     port: ${SPRING_NEO4J_PORT:7474}
+sample:
+  zipkin:
+    enabled: true
 eureka:
   instance:
     prefer-ip-address: true
