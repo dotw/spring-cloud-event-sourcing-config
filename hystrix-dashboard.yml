@@ -15,6 +15,16 @@ eureka:
 ---
 spring:
   profiles: docker
+  application:
+    name: hystrix-dashboard
+  zipkin:
+    baseUrl: http://zipkin:9411/
+  sleuth:
+    sampler:
+      percentage: 1.0
+sample:
+  zipkin:
+    enabled: true
 eureka:
   instance:
     prefer-ip-address: true
