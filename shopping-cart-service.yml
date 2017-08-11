@@ -43,6 +43,8 @@ eureka:
 ---
 spring:
   profiles: docker
+  application:
+    name: shopping-cart-service
   jpa:
     show_sql: false
     database: MYSQL
@@ -51,6 +53,14 @@ spring:
     url: jdbc:mysql://mysql:3306/dev
     username: root
     password: dbpass
+  zipkin:
+    baseUrl: http://zipkin:9411/
+  sleuth:
+    sampler:
+      percentage: 1.0
+sample:
+  zipkin:
+    enabled: true
 security:
   oauth2:
     resource:
