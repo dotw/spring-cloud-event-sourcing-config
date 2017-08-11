@@ -41,6 +41,8 @@ security:
 ---
 spring:
   profiles: docker
+  application:
+    name: online-store-web
   data:
     mongodb:
       host: mongo
@@ -51,6 +53,14 @@ spring:
     date-format: "YYYY-MM-dd"
     serialization:
       write_dates_as_timestamps: true
+  zipkin:
+    baseUrl: http://zipkin:9411/
+  sleuth:
+    sampler:
+      percentage: 1.0
+sample:
+  zipkin:
+    enabled: true
 security:
   oauth2:
     resource:
