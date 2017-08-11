@@ -28,6 +28,16 @@ security:
 ---
 spring:
   profiles: docker
+  application:
+    name: account-service
+  zipkin:
+    baseUrl: http://zipkin:9411/
+  sleuth:
+    sampler:
+      percentage: 1.0
+sample:
+  zipkin:
+    enabled: true
   datasource:
     url: jdbc:mysql://mysql:3306/dev
     username: root
