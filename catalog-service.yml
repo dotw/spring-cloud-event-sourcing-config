@@ -36,9 +36,6 @@ spring:
   sleuth:
     sampler:
       percentage: 1.0
-sample:
-  zipkin:
-    enabled: true
   redis:
     host: redis
     port: 6379
@@ -47,6 +44,9 @@ sample:
     username: root
     password: dbpass
     initialize: true
+sample:
+  zipkin:
+    enabled: true
 eureka:
   instance:
     prefer-ip-address: true
