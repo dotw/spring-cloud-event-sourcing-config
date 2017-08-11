@@ -50,6 +50,14 @@ spring:
   profiles: docker
   application:
     name: edge-service
+  zipkin:
+    baseUrl: http://zipkin:9411/
+  sleuth:
+    sampler:
+      percentage: 1.0
+sample:
+  zipkin:
+    enabled: true
 zuul:
   ignored-services: '*'
   ignoredPatterns: /**/api/**
