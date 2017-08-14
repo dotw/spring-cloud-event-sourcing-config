@@ -43,6 +43,14 @@ spring:
     username: root
     password: dbpass
     initialize: true
+  zipkin:
+    baseUrl: http://zipkin:9411/
+  sleuth:
+    sampler:
+      percentage: 1.0
+sample:
+  zipkin:
+    enabled: true
 security.ignored: /resources/**, /v1/mine
 eureka:
   instance:
