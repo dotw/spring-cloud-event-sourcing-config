@@ -20,7 +20,7 @@ spring:
     baseUrl: http://zipkin:9411/
   sleuth:
     sampler:
-      percentage: 1.0
+      percentage: 100.0
   neo4j:
     host: ${SPRING_NEO4J_HOST:neo4j}
     port: ${SPRING_NEO4J_PORT:7474}
