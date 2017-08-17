@@ -21,7 +21,7 @@ spring:
     baseUrl: http://zipkin:9411/
   sleuth:
     sampler:
-      percentage: 1.0
+      percentage: 100.0
 sample:
   zipkin:
     enabled: true
